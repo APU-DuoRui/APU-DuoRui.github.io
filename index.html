@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <script src="js/idangerous.swiper.min.js"></script>
+    <!-- 自己写的css样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 1.布局容器 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">个人页面</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索你想要的音乐">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索音乐</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">天气情况:&nbsp;<span style="font-weight:700;">晴天</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">个人主题<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                 
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- 2.占据全部视口(viewport)的容器。-->
+        <!-- 3.从堆叠到水平排列 -->
+        <!-- [3.1] -->
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">我是第一排</div>
+                    <div class="col-md-4">我是第一排</div>
+                    <div class="col-md-4">我是第一排</div>
+                </div>
+                <!-- [3.2] -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide blue-slide">我是第一张</div>
+                                <div class="swiper-slide red-slide">我是第二张</div>
+                                <div class="swiper-slide orange-slide">我是第三张</div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            var mySwiper = new Swiper('.swiper-container', {
+                                loop: true,
+                                autoplay: 3000,
+                            });  
+                        </script>
+                    </div>
+                </div>
+                <!-- [3.3] -->
+                <div class="row">
+                    <div class="col-md-4">我是第二排</div>
+                    <div class="col-md-4">我是第二排</div>
+                    <div class="col-md-4">我是第二排</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
