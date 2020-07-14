@@ -53,3 +53,11 @@
     top: 25px;
     border-radius: 15px;
 }
+
+.section-title {
+    text-align: center;
+    font-size: 16px;
+    color: #7d91aa;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
