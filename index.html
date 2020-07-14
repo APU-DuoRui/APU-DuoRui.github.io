@@ -36,7 +36,7 @@
                                 <button type="submit" class="btn btn-default">搜索音乐</button>
                             </form>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">天气情况:&nbsp;<span style="font-weight:700;">晴天</span></a></li>
+                                <li><a href="#">当前的城市<span class="city">深圳</span>天气情况:&nbsp;<span style="font-weight:700;">晴天</span></a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                         aria-haspopup="true" aria-expanded="false">个人主题<span class="caret"></span></a>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="container"> -->
+
                 <div class="section-title">
                     <h2>标签</h2>
                     <p>文本</p>
@@ -142,10 +142,22 @@
         </div>
     </div>
     <script type="text/javascript">
-        var mySwiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: 3000,
-        });
+        //1.声明一个引入
+        $(function () {
+            //1.1是给触摸轮播图注册animate
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: 3000,
+            });
+
+            /* 1.2 发送天气天气请求
+              * 请求地址：http://wthrcdn.etouch.cn/weather_mini
+              * 请求方法：get
+              * 请求参数：city
+              * 示例： http://wthrcdn.etouch.cn/weather_mini?city=深圳
+            */
+
+        })
     </script>
 </body>
 
