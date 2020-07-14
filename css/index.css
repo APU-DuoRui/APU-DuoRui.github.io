@@ -23,11 +23,18 @@
 }
 
 .inner {
-    background-color: #1f2131;
-    padding: 35px;
+    width: 120px;
+
     color: #90a0b2;
     border-radius: 5px;
     font-weight: 300;
+    margin-top: 28px;
+}
+
+.inner img {
+    /* width: 490px; */
+    width: 345px;
+    height: 290px;
 }
 
 .price {

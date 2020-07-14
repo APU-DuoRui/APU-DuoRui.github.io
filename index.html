@@ -20,45 +20,47 @@
 <body>
     <!-- 1.布局容器 -->
     <div class="container">
-        <!-- 导航栏 -->
-        <div class="row">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid col-md-12">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">个人页面</a>
+        <div class="container">
+            <!-- 导航栏 -->
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid col-md-12">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">个人页面</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索你想要的音乐">
+                                </div>
+                                <button type="submit" class="btn btn-default">搜索音乐</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">天气情况:&nbsp;<span style="font-weight:700;">晴天</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">个人主题<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="搜索你想要的音乐">
-                            </div>
-                            <button type="submit" class="btn btn-default">搜索音乐</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">天气情况:&nbsp;<span style="font-weight:700;">晴天</span></a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">个人主题<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
         <!-- 2.占据全部视口(viewport)的容器。-->
         <!-- 3.从堆叠到水平排列 -->
         <!-- [3.1] -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="container-fluid">
                 <!-- [3.2] -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="container text-center">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide blue-slide">我是第一张</div>
@@ -68,86 +70,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="section-title">
-                        <h2>See our Pricings</h2>
-                        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                    </div>
+                <!-- <div class="container"> -->
+                <div class="section-title">
+                    <h2>标签</h2>
+                    <p>文本</p>
+                </div>
+                <div class="row">
+                    <table class="table table-hover">
+                       
+                    </table>
+                </div>
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 single-pricing-2">
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2">
                             <div class="inner">
-                                <div class="title">
-                                    <h2>Free</h2>
-                                    <div class="price">
-                                        <span>$29</span>
-                                        <span>2 month</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>5GB Storage</li>
-                                    <li>1GB RAM</li>
-                                    <li>400GB Bandwidth</li>
-                                    <li>10 Email Address</li>
-                                    <li>Forum Support</li>
-                                </ul>
-                                <a href="#" class="button">Sign Up</a>
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594740651227&di=3e95aceb3a76c15bdbc8ce34f812255c&imgtype=0&src=http%3A%2F%2Fstatic.shenyou.cn%2Fuploadfile%2F2016%2F0920%2F20160920114524379.jpg%3Fwatermark%2F1%2Fimage%2FaHR0cDovL3N0YXRpYy5zaGVueW91LnR2L3dhdGVyX21hcmsucG5n%2Fdissolve%2F100%2Fgravity%2FSouthEast%2F"
+                                    alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 single-pricing-2 active">
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2 active">
                             <div class="inner">
-                                <div class="title">
-                                    <h2>Free</h2>
-                                    <div class="price">
-                                        <span>$29</span>
-                                        <span>2 month</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>5GB Storage</li>
-                                    <li>1GB RAM</li>
-                                    <li>400GB Bandwidth</li>
-                                    <li>10 Email Address</li>
-                                    <li>Forum Support</li>
-                                </ul>
-                                <a href="#" class="button">Sign Up</a>
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594740651224&di=a3d6c4e068c6ab341c141a083f48e315&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F74767b9f8a718f4c05fb2bfd00bc1ca7d573efbf.jpg"
+                                    alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 single-pricing-2">
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2">
                             <div class="inner">
-                                <div class="title">
-                                    <h2>Free</h2>
-                                    <div class="price">
-                                        <span>$29</span>
-                                        <span>2 month</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>5GB Storage</li>
-                                    <li>1GB RAM</li>
-                                    <li>400GB Bandwidth</li>
-                                    <li>10 Email Address</li>
-                                    <li>Forum Support</li>
-                                </ul>
-                                <a href="#" class="button">Sign Up</a>
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594740971061&di=ed78b00a8a2b5c1a07238f52988e8be5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D7eafe8bbf1039245a1b5e107b795a4a8%2F989fc254564e92586c6898989182d158cdbf4ea0.jpg"
+                                    alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 single-pricing-2">
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2">
                             <div class="inner">
-                                <div class="title">
-                                    <h2>Free</h2>
-                                    <div class="price">
-                                        <span>$29</span>
-                                        <span>2 month</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>5GB Storage</li>
-                                    <li>1GB RAM</li>
-                                    <li>400GB Bandwidth</li>
-                                    <li>10 Email Address</li>
-                                    <li>Forum Support</li>
-                                </ul>
-                                <a href="#" class="button">Sign Up</a>
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594740971061&di=ed78b00a8a2b5c1a07238f52988e8be5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D7eafe8bbf1039245a1b5e107b795a4a8%2F989fc254564e92586c6898989182d158cdbf4ea0.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2">
+                            <div class="inner">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594741476036&di=312faed07145a6b4c72c7092789c41f1&imgtype=0&src=http%3A%2F%2Fvpic.video.qq.com%2F3388556%2Fe0545gnthu8_ori_3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 .col-sm-4 single-pricing-2">
+                            <div class="inner">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594741476036&di=0dcfc6029acb343177679c65b84f0f2e&imgtype=0&src=http%3A%2F%2Fi8.17173.itc.cn%2Fv3%2Foutcms%2F2014%2F03%2F27%2F1395854667814_image_9406.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -160,16 +128,17 @@
                 <div class="col-md-3">我是第二排</div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">1
-            <img src=" " alt="">
-        </div>
-        <div class="col-md-4">2
-            <img src=" " alt="">
-        </div>
-        <div class="col-md-4">3
-            <img src=" " alt="">
+        <!-- </div> -->
+        <div class="row">
+            <div class="col-md-4">1
+                <img src=" " alt="">
+            </div>
+            <div class="col-md-4">2
+                <img src=" " alt="">
+            </div>
+            <div class="col-md-4">3
+                <img src=" " alt="">
+            </div>
         </div>
     </div>
     <script type="text/javascript">
