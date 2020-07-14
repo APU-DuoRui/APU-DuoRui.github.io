@@ -21,3 +21,11 @@
     font-size: 36px;
     text-align: center;
 }
+
+.inner {
+    background-color: #1f2131;
+    padding: 35px;
+    color: #90a0b2;
+    border-radius: 5px;
+    font-weight: 300;
+}
