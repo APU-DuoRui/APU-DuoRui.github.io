@@ -25,12 +25,13 @@ $(function () {
     // 每隔半小时换一张. 
     setInterval(setBigPic, 1000 * 60 * 30);
     //2.创建一个定时器来控制背景图片隐藏
-    setInterval(function () {
+    setTimeout(function () {
         $('#loading').hide();
         $('.main').show();
-    }, 3000);
+    }, 3000)
 
-    $('.music').on('click', function () {
+    $('.music').on("click", function (e) {
+        e.preventDefault()
         $('.current').show();
         $('.main').hide();
         $('#loading').hide();
