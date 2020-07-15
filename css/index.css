@@ -185,6 +185,12 @@ li {
     display: none;
 }
 
+.music {
+    line-height: 38px;
+    background-color: #878786;
+    border: 0;
+}
+
 .swiper-container {
     width: 100%;
     height: 290px;
