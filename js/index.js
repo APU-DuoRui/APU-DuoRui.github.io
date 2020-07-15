@@ -30,7 +30,7 @@ $(function () {
         $('.main').show();
     }, 3000);
 
-    $('.btn').on('click', function () {
+    $('.music').on('click', function () {
         $('.current').show();
         $('.main').hide();
     })
