@@ -33,10 +33,12 @@ $(function () {
     $('.music').on('click', function () {
         $('.current').show();
         $('.main').hide();
+        $('#loading').hide();
     })
     $('.x').on('click', function () {
         $('.current').hide();
         $('.main').show();
+        $('#loading').hide();
 
     })
     /* 1.2 发送天气天气请求
